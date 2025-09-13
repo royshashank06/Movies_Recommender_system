@@ -140,6 +140,7 @@ if st.button("Recommend"):
     for idx, col in enumerate(cols):
         with col:
             st.markdown('<div class="movie-card">', unsafe_allow_html=True)
-            st.image(posters[idx], use_column_width=True, output_format="auto")
+           # st.image(posters[idx], use_column_width=True, output_format="auto")
+            st.image(posters[idx], use_container_width=True, output_format="auto")
             st.markdown(f'<div class="movie-name">{names[idx]}</div>', unsafe_allow_html=True)
             st.markdown('</div>', unsafe_allow_html=True)
